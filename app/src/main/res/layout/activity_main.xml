@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/relative"
+    >
+
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="點數"
+        android:textSize="40dp"
+        android:layout_centerHorizontal="true"
+
+        android:layout_below="@id/gif"
+        />
+
+    <pl.droidsonroids.gif.GifImageView
+
+
+        android:id="@+id/gif"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/one"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+       />
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/gif2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@id/gif"
+        />
+
+
+    <pl.droidsonroids.gif.GifImageView
+
+        android:id="@+id/gif3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_toLeftOf="@id/gif"
+
+        android:layout_centerVertical="true"
+        />
+
+    <pl.droidsonroids.gif.GifImageView
+
+        android:id="@+id/gif4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/gif"
+        />
+
+    <pl.droidsonroids.gif.GifImageView
+
+        android:id="@+id/gif5"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:layout_centerVertical="true"
+        android:layout_above="@id/gif4"
+        android:layout_toRightOf="@id/gif2"
+        />
+
+    <pl.droidsonroids.gif.GifImageView
+
+        android:id="@+id/gif6"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:layout_centerVertical="true"
+        android:layout_above="@id/gif3"
+        android:layout_toLeftOf="@id/gif2"
+        />
+
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="233dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="120dp"
+        android:text="擲骰子"
+
+        android:textSize="30dp"
+        android:onClick="roll"
+        />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:text="增加骰子"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:onClick="add"
+        />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button2"
+        android:layout_marginLeft="30dp"
+        android:text="減少骰子"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="76dp"
+        android:onClick="reduce"
+        />
+
+
+</RelativeLayout>
