@@ -37,8 +37,8 @@ public class MainActivity extends AppCompatActivity {
         x=1;
        soundPool = new SoundPool.Builder().build();
         soundID =soundPool.load(this,R.raw.dice,1);
-        Log.w("boobs","test5");
-        Log.w("boobs","test6");
+        Log.w("boobs","正式第五次不勾選正常案");
+
     }
 
     public void roll(View view) {
