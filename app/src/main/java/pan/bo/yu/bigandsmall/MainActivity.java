@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         x=1;
        soundPool = new SoundPool.Builder().build();
         soundID =soundPool.load(this,R.raw.dice,1);
-        Log.w("boobs","正式第五次部勾選 簽名 全部強制");
+        Log.w("boobs","更新簽名");
 
     }
 
