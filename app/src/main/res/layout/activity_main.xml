@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:id="@+id/relative"
+    android:background="@drawable/back"
     >
 
 
@@ -18,8 +19,9 @@
         android:text="點數"
         android:textSize="40dp"
         android:layout_centerHorizontal="true"
-
         android:layout_below="@id/gif"
+        android:textColor="@color/black"
+        android:fontFamily="@font/font3"
         />
 
     <pl.droidsonroids.gif.GifImageView
@@ -98,6 +100,8 @@
         android:background="@drawable/mylayout"
         android:textSize="30dp"
         android:onClick="roll"
+        android:textColor="#FFFEFF"
+        android:fontFamily="@font/font3"
         />
 
     <Button
@@ -107,10 +111,11 @@
         android:layout_marginLeft="30dp"
         android:layout_marginTop="30dp"
         android:text="增加骰子"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="16dp"
         android:onClick="add"
         android:background="@drawable/mylayout"
+        android:textColor="#FFFEFF"
+        android:fontFamily="@font/font3"
+        android:textSize="20dp"
         />
 
     <Button
@@ -120,10 +125,12 @@
         android:layout_below="@id/button2"
         android:layout_marginLeft="30dp"
         android:text="減少骰子"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="76dp"
+
         android:onClick="reduce"
         android:background="@drawable/mylayout"
+        android:textColor="#FFFEFF"
+        android:fontFamily="@font/font3"
+        android:textSize="20dp"
         />
 
 
