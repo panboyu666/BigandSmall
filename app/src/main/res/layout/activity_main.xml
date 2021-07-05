@@ -95,7 +95,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="120dp"
         android:text="擲骰子"
-
+        android:background="@drawable/mylayout"
         android:textSize="30dp"
         android:onClick="roll"
         />
@@ -110,6 +110,7 @@
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="16dp"
         android:onClick="add"
+        android:background="@drawable/mylayout"
         />
 
     <Button
@@ -122,6 +123,7 @@
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="76dp"
         android:onClick="reduce"
+        android:background="@drawable/mylayout"
         />
 
 
