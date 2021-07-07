@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:id="@+id/relative"
-    android:background="@drawable/back"
-    >
-
+    android:background="@drawable/back">
 
 
     <TextView
@@ -134,15 +131,27 @@
         />
 
     <com.google.android.gms.ads.AdView
-        android:layout_marginBottom="40dp"
         xmlns:ads="http://schemas.android.com/apk/res-auto"
         android:id="@+id/adView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true"
+        android:layout_above="@id/button"
+        android:layout_marginBottom="30dp"
         ads:adSize="BANNER"
         ads:adUnitId="ca-app-pub-4133015411524559/5638244724">
+    </com.google.android.gms.ads.AdView>
+
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-4133015411524559/3348328583">
     </com.google.android.gms.ads.AdView>
 
 </RelativeLayout>

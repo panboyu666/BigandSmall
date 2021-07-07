@@ -1,11 +1,12 @@
 package pan.bo.yu.bigandsmall;
 
+import android.content.ClipboardManager;
+import android.content.Context;
 import android.media.SoundPool;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
 import android.view.View;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -22,18 +23,22 @@ import pl.droidsonroids.gif.GifImageView;
 public class MainActivity extends AppCompatActivity {
     GifImageView gif ,gif2,gif3,gif4,gif5,gif6;
     int i ,i2,i3,i4,i5,i6,x;
-    private RelativeLayout relative;
     TextView textView;
     SoundPool soundPool;
     int soundID;
     boolean flag =true;
-    AdView mAdView;
+    private AdView mAdView;
+    private AdView mAdView2;
+    ClipboardManager clipboard;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //廣告加載
+
+
+        clipboard = (ClipboardManager) this.getSystemService(Context.CLIPBOARD_SERVICE);
+
         MobileAds.initialize(this, new OnInitializationCompleteListener() {
             @Override
             public void onInitializationComplete(InitializationStatus initializationStatus) {
@@ -41,8 +46,15 @@ public class MainActivity extends AppCompatActivity {
         });
 
         mAdView = findViewById(R.id.adView);
+        mAdView2 = findViewById(R.id.adView2);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
+        mAdView2.loadAd(adRequest);
+
+
+
+
+
 
 
         gif =findViewById(R.id.gif);
@@ -51,12 +63,11 @@ public class MainActivity extends AppCompatActivity {
         gif4 =findViewById(R.id.gif4);
         gif5 =findViewById(R.id.gif5);
         gif6 =findViewById(R.id.gif6);
-        relative= findViewById(R.id.relative);
         textView=findViewById(R.id.text);
         x=1;
        soundPool = new SoundPool.Builder().build();
-        soundID =soundPool.load(this,R.raw.dice,1);
-        Log.w("boobs","更新簽名");
+       soundID =soundPool.load(this,R.raw.dice,1);
+
 
     }
 
