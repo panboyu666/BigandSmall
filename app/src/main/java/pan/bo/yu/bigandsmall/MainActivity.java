@@ -46,10 +46,12 @@ public class MainActivity extends AppCompatActivity {
         });
 
         mAdView = findViewById(R.id.adView);
-        mAdView2 = findViewById(R.id.adView2);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
-        mAdView2.loadAd(adRequest);
+
+        mAdView2 = findViewById(R.id.adView2);
+        AdRequest adRequest2 = new AdRequest.Builder().build();
+        mAdView2.loadAd(adRequest2);
 
 
 

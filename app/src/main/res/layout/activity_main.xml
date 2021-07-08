@@ -68,10 +68,9 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
 
-        android:layout_centerVertical="true"
         android:layout_above="@id/gif4"
-        android:layout_toRightOf="@id/gif2"
-        />
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/gif2" />
 
     <pl.droidsonroids.gif.GifImageView
 
@@ -90,9 +89,9 @@
         android:id="@+id/button"
         android:layout_width="233dp"
         android:layout_height="70dp"
-        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="100dp"
+        android:layout_marginBottom="0dp"
+        android:layout_above="@id/adView2"
         android:text="擲骰子"
         android:background="@drawable/mylayout"
         android:textSize="30dp"
@@ -106,7 +105,7 @@
         android:layout_width="125dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="60dp"
         android:text="增加骰子"
         android:onClick="add"
         android:background="@drawable/mylayout"
@@ -136,8 +135,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_above="@id/button"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="10dp"
         ads:adSize="BANNER"
         ads:adUnitId="ca-app-pub-4133015411524559/5638244724">
     </com.google.android.gms.ads.AdView>
@@ -149,7 +147,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
         android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
         ads:adSize="BANNER"
         ads:adUnitId="ca-app-pub-4133015411524559/3348328583">
     </com.google.android.gms.ads.AdView>

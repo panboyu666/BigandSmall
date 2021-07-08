@@ -9,8 +9,8 @@ android {
         applicationId "pan.bo.yu.bigandsmall"
         minSdkVersion 21
         targetSdkVersion 30
-        versionCode 1004
-        versionName "1.4"
+        versionCode 1005
+        versionName "1.5"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
